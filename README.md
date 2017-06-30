@@ -69,3 +69,6 @@ To take a random sample of the data the getRandSample.py file can be used. The f
 |path_in| the location of the entire dataset |fullset/|
 |path_out| the location of the samples taken from the entire dataset |testset/|
 |action | action to apply to the images, move or copy to their new location | "copy" or "move"|
+
+## Corrupt images check
+In train, test and classify, the cleaningtool of removing corrupt images outputs a separate csv file that contains a list of all broken images. If this file already exists when executing the function, it will add to that list. It will not check for duplicates in that list.
