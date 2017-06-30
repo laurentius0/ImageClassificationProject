@@ -61,7 +61,8 @@ After classifying is done the following file is created:
 * output.csv : a csv file containing the filenames and predicted classes
 
 ## Get random sample from data
-To take a random sample of the data the getRandSample.py file can be used. The files are moved or copied to another folder. usage: 
+To take a random sample of the data the getRandSample.py file can be used. The files are moved or copied to another folder. usage:
+
 | parameter        | description           | example setting (default) |
 | ------------- |:-------------:| -----:|
 |    n   | amount of samples that should be taken | 100 |
