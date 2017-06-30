@@ -1,0 +1,27 @@
+{
+    "training" :
+    {
+        "train_dir"       : "./flower_photos",
+        "remove_dups"     : "on",
+        "output_graph"    : "retrained_graph.pb",
+        "output_labels"   : "retrained_labels.txt"
+    },
+
+    "testing" :
+    {
+        "test_dir"        : "./test",
+        "thresholds"      : [0, 0.8],
+        "model_path"      : "retrained_graph.pb",
+        "tags_file"       : "retrained_labels.txt"
+    },
+
+    "classifying" :
+    {
+        "classify_dir"    : "./tolabel",
+        "threshold"       : 0.8,
+        "model_path"      : "retrained_graph.pb",
+        "tags_file"       : "retrained_labels.txt",
+        "output_csv_path" : "./",
+        "output_csv_name" : "output.csv"
+    }
+}
